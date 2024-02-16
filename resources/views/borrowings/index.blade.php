@@ -8,7 +8,7 @@
             <div class="card-header mb-2">
                 <div class="d-flex justify-content-between">
                     <h5 class="card-title">
-                        Borrowing
+                        Borrowing List
                     </h5>
                     <div class="ml-auto">
                         <a href="/borrowings/create" class="btn btn-primary add-button"><span>Add Data</span></a>
@@ -49,11 +49,20 @@
                             <td>End Date</td>
                             <td>
                                 <div class="btn-group mr-2" role="group" aria-label="Action Button">
-                                    <a href="/borrowings/detail" class="btn btn-primary"><i class="bi bi-eye-fill"></i></a>
+                                    {{-- <a href="/borrowings/detail" class="btn btn-primary"><i class="bi bi-eye-fill"></i></a> --}}
                                     <a href="/report/all" class="btn btn-success"><i class="bi bi-cloud-download"></i></a>
-                                    <a href="/borrowings/edit" class="btn btn-warning"><i
-                                            class="bi bi-pencil-square"></i></a>
-                                    <button type="button" class="btn btn-danger"><i class="bi bi-trash3-fill"></i></button>
+                                    {{-- @if ($borrowing->status == 0)
+                                        <button type="submit" class="btn btn-secondary disabled">Returned</button>
+                                    @else --}}
+                                    <form action="{{ url('/borrowings/edit/' . $borrowing->id_borrowing) }}" method="POST">
+                                        @csrf
+                                        @method('PUT')
+                                        <button type="submit" class="btn btn-primary">Return</button>
+                                    </form>
+                                    {{-- @endif --}}
+                                    {{-- <a href="/borrowings/edit" class="btn btn-warning"><i
+                                            class="bi bi-pencil-square"></i></a> --}}
+                                    {{-- <button type="button" class="btn btn-danger"><i class="bi bi-trash3-fill"></i></button> --}}
                                 </div>
                             </td>
                             </tr>

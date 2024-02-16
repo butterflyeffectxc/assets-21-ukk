@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 @section('contentTwo')
     <div class="page-heading">
-        <h3>Detail Category</h3>
+        <h3>User Detail</h3>
     </div>
     <div class="page-content">
         <div class="card px-3">
@@ -23,6 +23,18 @@
                                             <th class="text-bold-500">Name</th>
                                             <td>Fiction</td>
                                         </tr>
+                                        <tr>
+                                            <th class="text-bold-500">Email</th>
+                                            <td>Fiction</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-bold-500">Telephone</th>
+                                            <td>Fiction</td>
+                                        </tr>
+                                        <tr>
+                                            <th class="text-bold-500">Roles</th>
+                                            <td>Fiction</td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -30,7 +42,7 @@
                                 <table class="table table-borderless p-0 m-0">
                                     <thead>
                                         <tr>
-                                            <th>Description:</th>
+                                            <th>Address:</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -48,31 +60,9 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-end">
-                    <a href="/categories" class="btn btn-warning back-button"><span>Back</span></a>
+                    <a href="/users" class="btn btn-warning back-button"><span>Back</span></a>
                 </div>
             </div>
         </div>
     </div>
 @endsection
-{{-- DB::unprepared('
-CREATE TRIGGER min_stock AFTER INSERT ON borrowing_details
-FOR EACH ROW
-BEGIN
-    
-    IF NEW.status = 1 THEN
-        UPDATE books SET availability = availability - NEW.quantity WHERE id_book = NEW.id_book;
-    
-    END IF;
-END;
-');
-DB::unprepared('
-CREATE TRIGGER add_stock AFTER UPDATE ON borrowing_details
-FOR EACH ROW
-BEGIN
-    
-    IF NEW.status = 0 AND OLD.status != 0 THEN
-        UPDATE books SET availability = availability + NEW.quantity WHERE id_book = NEW.id_book;
-    
-    END IF;
-END;
-'); --}}

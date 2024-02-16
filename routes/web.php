@@ -55,6 +55,12 @@ Route::get('/user/books/detail', function () {
 Route::get('/user/collections', function () {
     return view('collections.index');
 });
+Route::get('/users', function () {
+    return view('users.index');
+});
+Route::get('/users/edit', function () {
+    return view('users.edit');
+});
 Route::get('/landing', function () {
     return view('dashboard.landing');
 });

@@ -11,10 +11,10 @@
             <div class="card-body">
                 <div class="container">
                     <div class="row">
-                        <div class="col-6 col-md-4">
+                        <div class="col-12 col-md-4">
                             <img src="{{ asset('assets/book.png') }}" alt="" width="200">
                         </div>
-                        <div class="col-6 col-md-8">
+                        <div class="col-12 col-md-8">
                             <h4>Title</h4>
                             <div class="table-responsive">
                                 <table class="table table-hover p-0 m-0">
@@ -78,6 +78,6 @@
         </div>
     </div>
     {{-- <script>
-        windows.print();
+           
     </script> --}}
 @endsection

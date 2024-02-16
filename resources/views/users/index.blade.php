@@ -8,11 +8,11 @@
             <div class="card-header mb-2">
                 <div class="d-flex justify-content-between">
                     <h5 class="card-title">
-                        User
+                        User List
                     </h5>
                     <div class="ml-auto">
                         <a href="/users/create" class="btn btn-primary add-button"><span>Add Data</span></a>
-                        <a href="/users/index" class="btn btn-warning back-button"><span>Back</span></a>
+                        {{-- <a href="/users/index" class="btn btn-warning back-button"><span>Back</span></a> --}}
                     </div>
                 </div>
             </div>
@@ -47,14 +47,11 @@
                             <td>Email</td>
                             <td>Telepone</td>
                             <td>Roles</td>
-                            <td>availability</td>
                             <td>
                                 <div class="btn-group mr-2" role="group" aria-label="Action Button">
                                     <a href="/users/detail" class="btn btn-primary"><i class="bi bi-eye-fill"></i></a>
-                                    <a href="/users/edit" class="btn btn-warning"><i
-                                            class="bi bi-pencil-square"></i></a>
-                                    <button type="button" class="btn btn-danger"><i
-                                            class="bi bi-trash3-fill"></i></button>
+                                    <a href="/users/edit" class="btn btn-warning"><i class="bi bi-pencil-square"></i></a>
+                                    <button type="button" class="btn btn-danger"><i class="bi bi-trash3-fill"></i></button>
                                 </div>
                             </td>
                             </tr>

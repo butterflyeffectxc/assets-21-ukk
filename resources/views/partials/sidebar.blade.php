@@ -42,16 +42,16 @@
         </div>
         <div class="sidebar-menu">
             <ul class="menu">
-                <li class="sidebar-title">Menu</li>
-                <li class="sidebar-item {{ Request::is('reports') ? 'active' : '' }}">
+                <li class="sidebar-title">Master Data</li>
+                {{-- <li class="sidebar-item {{ Request::is('reports') ? 'active' : '' }}">
                     <a href="{{ url('/reports') }}" class="sidebar-link">
                         <i class="bi bi-grid-fill"></i>
                         <span>Report</span>
                     </a>
-                </li>
+                </li> --}}
                 <li class="sidebar-item {{ Request::is('books') ? 'active' : '' }}">
                     <a href="{{ url('/books') }}" class="sidebar-link">
-                        <i class="bi bi-grid-fill"></i>
+                        <i class="bi bi-book-half"></i>
                         <span>Book</span>
                     </a>
                 </li>
@@ -63,29 +63,34 @@
                 </li>
                 <li class="sidebar-item {{ Request::is('borrowings') ? 'active' : '' }}">
                     <a href="{{ url('/borrowings') }}" class="sidebar-link">
-                        <i class="bi bi-grid-fill"></i>
+                        <i class="bi bi-stack"></i>
                         <span>Borrowing</span>
                     </a>
                 </li>
 
+
+            </ul>
+            <ul class="menu">
+                <li class="sidebar-title">Configuration</li>
                 <li class="sidebar-item has-sub">
                     <a href="#" class="sidebar-link">
-                        <i class="bi bi-stack"></i>
-                        <span>Roles</span>
+                        <i class="bi bi-gear"></i>
+                        <span>User</span>
                     </a>
 
                     <ul class="submenu">
                         <li class="submenu-item">
-                            <a href="/users" class="submenu-link">User</a>
+                            <button type="submit" class="submenu-link btn-sm btn pl-2"><i
+                                    class="bi bi-box-arrow-left pr-2"></i>Logout</button>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="/users" class="submenu-link">Data User</a>
                         </li>
 
-                        <li class="submenu-item">
+                        {{-- <li class="submenu-item">
                             <a href="/users" class="submenu-link">Operator</a>
-                        </li>
+                        </li> --}}
 
-                        <li class="submenu-item">
-                            <a href="/users" class="submenu-link">Admin</a>
-                        </li>
                     </ul>
                 </li>
 
