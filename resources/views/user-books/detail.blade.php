@@ -10,6 +10,24 @@
                             <div class="row">
                                 <div class="col-12 col-md-4">
                                     <img src="{{ asset('assets/book.png') }}" alt="" width="200">
+                                    {{-- <div class="card">
+                                        <div class="card-header">
+                                            <h4 class="card-title">Basic Rating</h4>
+                                        </div>
+                                        <div class="card-body">
+                                            <div id="basic"></div>
+                                        </div>
+                                    </div> --}}
+                                    <div class="container mt-3">
+                                        <input type="checkbox" id="rating" class="hidden-checkbox">
+                                        <label for="rating" class="heart-icon">
+                                            <i class="bi bi-heart"></i>
+                                            <i class="bi bi-heart-fill"></i>
+                                            <span>Add to Wishlist</span>
+                                        </label>
+                                    </div>
+
+
                                 </div>
                                 <div class="col-12 col-md-8">
                                     <h4 class="text-pink">Title</h4>

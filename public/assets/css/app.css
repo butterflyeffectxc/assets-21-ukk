@@ -289,7 +289,28 @@ p{
   text-decoration: none;
   color: #45496A;
 }
+/* Rating */
+.hidden-checkbox {
+  position: absolute;
+  left: -9999px;
+  color: red
+}
 
+.heart-icon .bi-heart-fill {
+  display: none;
+  color: red;
+}
+
+#rating:checked ~ .heart-icon .bi-heart {
+    display: none;
+    color: red
+}
+
+#rating:checked ~ .heart-icon .bi-heart-fill {
+    display: inline-block;
+    color: red
+}
+/* End Rating */
 @media screen and(min-width: 320px) and (max-width: 1023px){
   .feature{
     align-items: center;

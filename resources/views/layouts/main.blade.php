@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
-
+    <link rel="stylesheet" href="{{ asset('asset-template/extensions/rater-js/lib/style.css') }}">
     <link rel="stylesheet" href="{{ asset('asset-template/extensions/quill/quill.snow.css') }}">
     <link rel="stylesheet" href="{{ asset('asset-template/extensions/quill/quill.bubble.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -37,6 +37,8 @@
     </script>
     <script src="{{ asset('asset-template/extensions/quill/quill.min.js') }}"></script>
     <script src="{{ asset('asset-template/static/js/pages/quill.js') }}"></script>
+    <script src="{{ asset('asset-template/extensions/rater-js/index.js?v=2') }}"></script>
+    <script src="{{ asset('asset-template/static/js/pages/rater-js.js') }}"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     {{-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
