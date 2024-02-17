@@ -16,7 +16,7 @@
             <div class="container py-2">
                 <div class="row justify-content-center">
                     {{-- @foreach ($data as $book) --}}
-                    <div class="col-6 col-md-3">
+                    <div class="col-6 col-md-3 pb-5">
                         <img src="{{ asset('assets/book.png') }}" alt="cover" width="130">
                         <h5 class="pt-2">title</h5>
                         <small>Category</small>

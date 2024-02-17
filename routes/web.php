@@ -64,3 +64,6 @@ Route::get('/users/edit', function () {
 Route::get('/landing', function () {
     return view('dashboard.landing');
 });
+Route::get('/profile', function () {
+    return view('user-profile.index');
+});
