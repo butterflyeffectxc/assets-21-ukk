@@ -95,6 +95,8 @@
                             </div>
                         </div>
                         <div class="d-flex justify-content-end">
+                            <a href="/profile/edit-password/id" class="btn btn-color-light next-button mr-2"><span>Edit
+                                    Password</span></a>
                             <a href="/profile/edit/id" class="btn btn-color next-button mr-2"><span>Edit Profile</span></a>
                             <a href="/user/books" class="btn btn-warning back-button"><span>Back</span></a>
                         </div>

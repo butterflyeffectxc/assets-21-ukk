@@ -2,8 +2,8 @@
 @section('content')
     <div class="background-main">
         <div class="container my-5">
-            <div class="d-flex justify-content-between">
-                <h4 class="p-3">User Collections</h4>
+            <div class="d-flex pt-5 justify-content-between">
+                <h4 class="p-3 bold">User Collections</h4>
                 <div class="form-row">
                     <div class="col">
                         <input type="text" class="form-control" placeholder="Search">
@@ -13,7 +13,7 @@
                     </div>
                 </div>
             </div>
-            <div class=" justify-content-between d-flex vh-auto mt-5">
+            <div class=" justify-content-between d-flex vh-auto mt-5 p-0">
                 <div class="container">
                     {{-- @foreach ($data as $book) --}}
                     <a href="#" class="card-link">

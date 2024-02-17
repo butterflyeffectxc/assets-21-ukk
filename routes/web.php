@@ -67,3 +67,9 @@ Route::get('/landing', function () {
 Route::get('/profile', function () {
     return view('user-profile.index');
 });
+Route::get('/profile/edit/id', function () {
+    return view('user-profile.edit');
+});
+Route::get('/profile/edit-password/id', function () {
+    return view('user-profile.edit-password');
+});

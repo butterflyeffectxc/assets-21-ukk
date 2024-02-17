@@ -1,8 +1,8 @@
 @extends('layouts.main')
 @section('content')
     <div class="">
-        <div class="container p-0 d-flex justify-content-between">
-            <h4 class="p-3">Book List</h4>
+        <div class="container px-0 pt-5 d-flex justify-content-between">
+            <h4 class="p-3 bold">Book List</h4>
             <div class="form-row py-3">
                 <div class="col">
                     <input type="text" class="form-control" placeholder="Search">
